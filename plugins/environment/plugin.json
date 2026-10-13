@@ -1,0 +1,12 @@
+{
+  "id": "environment",
+  "name": "Environment",
+  "version": "1.0",
+  "description": "What this computer can do: operating system, hardware, interpreters, packages, installed applications.",
+  "kind": "panel",
+  "icon": "cpu",
+  "looks": ["professional"],
+  "dock": "right",
+  "order": 30,
+  "client": "client.js"
+}

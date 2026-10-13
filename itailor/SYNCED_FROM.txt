@@ -1,0 +1,3 @@
+This folder is a copy of the iTailor library package (version 0.1.0),
+made by sync_itailor.py from the sibling repository ../itailor/itailor.
+Edit the library there, not here; run sync_itailor.py to refresh this copy.

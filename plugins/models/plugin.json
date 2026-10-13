@@ -1,0 +1,12 @@
+{
+  "id": "models",
+  "name": "Models",
+  "version": "1.0",
+  "description": "Model services found, the candidates, and how iTailor ranks them.",
+  "kind": "panel",
+  "icon": "box",
+  "looks": ["professional"],
+  "dock": "right",
+  "order": 40,
+  "client": "client.js"
+}

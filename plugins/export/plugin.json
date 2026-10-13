@@ -1,0 +1,12 @@
+{
+  "id": "export",
+  "name": "Export",
+  "version": "1.0",
+  "description": "Save the open Patchbook as a Markdown report, a Jupyter notebook or a web page.",
+  "kind": "tool",
+  "icon": "download",
+  "looks": ["simple", "professional"],
+  "order": 10,
+  "server": "server.py",
+  "client": "client.js"
+}

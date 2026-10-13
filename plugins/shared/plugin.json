@@ -1,0 +1,13 @@
+{
+  "id": "shared",
+  "name": "Shared store",
+  "version": "1.0",
+  "description": "What patches left for each other on disk: values, parameters and methods, in any language, mirrored into the project graph.",
+  "kind": "panel",
+  "icon": "hard-drive",
+  "looks": ["simple", "professional"],
+  "dock": "right",
+  "order": 45,
+  "server": "server.py",
+  "client": "client.js"
+}

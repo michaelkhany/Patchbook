@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ app_name }}</title>
+<meta name="description" content="Patchbook: write what you want in plain language; iTailor writes the code, runs it here, repairs it and shows the result.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232456c8'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/vendor/codemirror/codemirror.min.css">
+<link rel="stylesheet" href="/static/vendor/codemirror/theme/material-darker.min.css">
+<link rel="stylesheet" href="/static/css/patchbook.css?v={{ version }}">
+</head>
+<body>
+
+<!-- Startup screen -->
+<div id="splash" class="splash" role="status" aria-live="polite">
+  <div class="splash-card">
+    <div class="logo">P</div>
+    <h1>{{ app_name }}</h1>
+    <div class="version">Version {{ version }}</div>
+    <ul id="splash-steps" class="splash-steps"></ul>
+    <div class="bar"><div id="splash-bar" class="bar-fill"></div></div>
+    <div id="splash-note" class="splash-note"></div>
+  </div>
+</div>
+
+<!-- First-run setup -->
+<div id="wizard" class="wizard hidden"></div>
+
+<!-- The workbench -->
+<div id="workbench" class="workbench hidden">
+  <header id="menubar" class="menubar">
+    <div class="brand"><span class="mark">P</span><span>{{ app_name }}</span><span class="ver">{{ version }}</span></div>
+    <button id="menu-mobile" class="menu-mobile icon-btn" title="Menu" aria-label="Menu"></button>
+    <nav id="menus" class="menus" aria-label="Main menu"></nav>
+    <div id="menubar-right" class="menubar-right"></div>
+  </header>
+  <div id="main" class="main">
+    <aside id="dock-left" class="dock dock-left" aria-label="Left panels">
+      <div class="dock-tabs" id="dock-left-tabs"></div>
+      <div class="dock-body" id="dock-left-body"></div>
+    </aside>
+    <section id="center" class="center" aria-label="Workspace"></section>
+    <aside id="dock-right" class="dock dock-right" aria-label="Right panels">
+      <div class="dock-tabs" id="dock-right-tabs"></div>
+      <div class="dock-body" id="dock-right-body"></div>
+    </aside>
+  </div>
+  <footer id="statusbar" class="statusbar">
+    <span id="status-left" class="seg"></span>
+    <span id="status-mid" class="mid"></span>
+    <span id="status-right" class="seg"></span>
+  </footer>
+</div>
+
+<div id="dialogs"></div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<script src="/static/vendor/codemirror/codemirror.min.js"></script>
+<script src="/static/vendor/codemirror/mode/python.min.js"></script>
+<script src="/static/vendor/codemirror/mode/r.min.js"></script>
+<script src="/static/vendor/codemirror/mode/javascript.min.js"></script>
+<script src="/static/vendor/codemirror/mode/shell.min.js"></script>
+<script src="/static/vendor/codemirror/mode/markdown.min.js"></script>
+<script src="/static/vendor/codemirror/mode/yaml.min.js"></script>
+<script src="/static/vendor/codemirror/mode/sql.min.js"></script>
+<script src="/static/vendor/codemirror/mode/julia.min.js"></script>
+<script src="/static/vendor/codemirror/addon/runmode.min.js"></script>
+<script src="/static/vendor/codemirror/addon/placeholder.min.js"></script>
+<script src="/static/vendor/codemirror/addon/matchbrackets.min.js"></script>
+<script src="/static/vendor/marked/marked.min.js"></script>
+<script src="/static/vendor/dompurify/purify.min.js"></script>
+<script src="/static/js/icons.js?v={{ version }}"></script>
+<script src="/static/js/core.js?v={{ version }}"></script>
+<script src="/static/js/ui.js?v={{ version }}"></script>
+<script src="/static/js/panels.js?v={{ version }}"></script>
+<script src="/static/js/projects.js?v={{ version }}"></script>
+<script src="/static/js/notebook.js?v={{ version }}"></script>
+<script src="/static/js/runs.js?v={{ version }}"></script>
+<script src="/static/js/settings.js?v={{ version }}"></script>
+<script src="/static/js/wizard.js?v={{ version }}"></script>
+<script src="/static/js/plugins.js?v={{ version }}"></script>
+<script src="/static/js/app.js?v={{ version }}"></script>
+</body>
+</html>

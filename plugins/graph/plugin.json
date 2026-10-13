@@ -1,0 +1,13 @@
+{
+  "id": "graph",
+  "name": "Project graph",
+  "version": "1.0",
+  "description": "The project knowledge graph: what iTailor knows about this project across runs.",
+  "kind": "panel",
+  "icon": "graph",
+  "looks": ["professional"],
+  "dock": "right",
+  "order": 70,
+  "server": "server.py",
+  "client": "client.js"
+}

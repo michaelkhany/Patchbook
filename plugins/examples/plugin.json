@@ -1,0 +1,11 @@
+{
+  "id": "examples",
+  "name": "Example patches",
+  "version": "1.0",
+  "description": "Ready-made patches to insert and adapt: describing data, merging, plotting, reporting.",
+  "kind": "tool",
+  "icon": "star",
+  "looks": ["simple", "professional"],
+  "order": 20,
+  "client": "client.js"
+}

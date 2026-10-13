@@ -1,0 +1,13 @@
+{
+  "id": "lessons",
+  "name": "Lessons",
+  "version": "1.0",
+  "description": "What iTailor remembered from your answers and from repairs that worked; proposed standing rules.",
+  "kind": "panel",
+  "icon": "book",
+  "looks": ["professional"],
+  "dock": "right",
+  "order": 60,
+  "server": "server.py",
+  "client": "client.js"
+}

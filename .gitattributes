@@ -1,0 +1,14 @@
+# Keep the start scripts runnable on every system regardless of the checkout platform.
+* text=auto
+start.sh text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+start.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary

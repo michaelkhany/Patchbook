@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Everything Patchbook stores for its user: configuration, the saved model key, projects, iTailor's home.
+data/
+# The library copy in ./itailor is produced by sync_itailor.py and is committed on purpose:
+# a Patchbook folder must run after being copied to another computer.

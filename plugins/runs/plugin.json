@@ -1,0 +1,12 @@
+{
+  "id": "runs",
+  "name": "Runs",
+  "version": "1.0",
+  "description": "Every run iTailor made in this project: report, plan, state and transcript.",
+  "kind": "panel",
+  "icon": "clock",
+  "looks": ["professional"],
+  "dock": "right",
+  "order": 50,
+  "client": "client.js"
+}

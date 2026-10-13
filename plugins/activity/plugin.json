@@ -1,0 +1,13 @@
+{
+  "id": "activity",
+  "name": "Activity",
+  "version": "1.0",
+  "description": "What was used while this project ran: programs, scripts, installs, permissions, models and files, run by run.",
+  "kind": "panel",
+  "icon": "history",
+  "looks": ["simple", "professional"],
+  "dock": "right",
+  "order": 48,
+  "server": "server.py",
+  "client": "client.js"
+}
